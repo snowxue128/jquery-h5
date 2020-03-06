@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>扫码下载</title>
+    <link rel="stylesheet" href="css/ynyn.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <style>
+        html,body{height: 100%;overflow: hidden;background: #fff;}
+    </style>
+</head>
+<body>
+    <!-- 公用头部开始 -->
+    <div id="header"></div>
+    <!-- 公用头部结束 -->
+    <div class="codeBox">
+        <div class="codeImg animated zoomIn">
+            <img src="./img/erweima.png" alt="" srcset="">
+            <span>扫码下载</span>
+        </div>
+    </div>
+    <div class="btnBox animated fadeInUp">
+        <div class="btnList iosbtn">
+            <img src="./img/iOS.png" alt="" srcset="">
+            <span>ios下载</span>
+        </div>
+        <div class="btnList anzhuobtn">
+            <img src="./img/anzhuo.png" alt="" srcset="">
+            <span>安卓下载</span>
+        </div>
+    </div>
+</body>
+<script>
+    $(function() {
+        $('#header').load('header.html');
+        $('.iosbtn').click(function(){
+            var u = navigator.userAgent;
+		    var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+            if (isIOS) {
+					//ios的scheme协议
+		           	window.location.href = 'ynyn://';
+		           	setTimeout(function(){
+		                let hidden = window.document.hidden || window.document.mozHidden || window.document.msHidden ||window.document.webkitHidden 
+		                if(typeof hidden =="undefined" || hidden ==false){
+		                	//App store下载地址
+		                    window.location.href = "https://itunes.apple.com/cn/app/id1494559999?mt=8";
+		                }
+		            }, 2500);
+		    }
+        })
+        $('.anzhuobtn').click(function(){
+            var u = navigator.userAgent;
+		    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1;
+            if (isAndroid) {
+		        //安卓下载地址
+		        window.location.href = 'http://hn-ynyn-download.ynyn.video/ynyn-release.apk';
+		    }
+        })
+    })
+</script>
+</html>

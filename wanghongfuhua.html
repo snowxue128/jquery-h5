@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>网红孵化</title>
+    <link rel="stylesheet" href="css/ynyn.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <style>
+        html,body{height: 100%;overflow: hidden;}
+    </style>
+</head>
+<body>
+    <!-- 公用头部开始 -->
+    <div id="header"></div>
+    <!-- 公用头部结束 -->
+    <div class="wanghongBanner"></div>
+    <div class="wanghongtitle">“Ystar” 网红扶持计划</div>
+    <div class="jihuaBox">
+        <div class="jihuaBox_item animated flipInY">
+            <div><img src="./img/hot_icon.png" alt="" srcset=""></div>
+            <div>热门推荐位 快速引爆</div>
+        </div>
+        <div class="jihuaBox_item animated flipInY">
+            <div><img src="./img/star_icon.png" alt="" srcset=""></div>
+            <div>优质潜力股 专业打造</div>
+        </div>
+        <div class="jihuaBox_item animated flipInY">
+            <div><img src="./img/lw_icon.png" alt="" srcset=""></div>
+            <div>优质福利享不停</div>
+        </div>
+    </div>
+    <a href="shenqingruzhu.html" class="ruzhu">立即申请入驻</a>
+</body>
+<script>
+    $(function() {
+        $('#header').load('header.html');
+    })
+</script>
+<script type="text/javascript" src="js/wow.min.js"></script>  
+<script type="text/javascript">  
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script> 
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>研发初心</title>
+    <link rel="stylesheet" href="css/ynyn.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <style>
+        html,body{height: 100%;overflow: hidden;background: url('./img/beijing-2.png') no-repeat;background-size: 100% 100%;}
+    </style>
+</head>
+<body>
+    <!-- 公用头部开始 -->
+    <div id="header"></div>
+    <!-- 公用头部结束 -->
+    <div class="taimuguLogo animated rollIn"></div>
+    <div class="iphoneImg animated fadeInRight"><img src="./img/shouji.png" alt=""></div>
+    <div class="yfcxTxt animated flipInY"></div>
+</body>
+<script>
+    $(function() {
+        $('#header').load('header.html');
+    })
+</script>
+</html>

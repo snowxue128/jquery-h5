@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>APP介绍</title>
+    <link rel="stylesheet" href="css/ynyn.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <style>
+        html,body{height: 100%;overflow-x: hidden;}
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-pagination-bullet-active{
+            background:#3E2DDA !important;
+            opacity:2 !important;
+        }
+        .swiper-pagination-bullet{
+            background:#fff;
+            opacity:2 !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- 公用头部开始 -->
+    <div id="header"></div>
+    <!-- 公用头部结束 -->
+    <div class="yinying"></div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="container">
+                    <div class="contentOne wow slideInDown" data-wow-duration="1s" data-wow-delay="0s">
+                        <div>有男有女</div>
+                        <div>一款会赚钱的短视频APP</div>
+                    </div>
+                    <div class="contentTwo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                        <div>致力于打造极致有趣的用户体验,</div>
+                        <div>创造一款全民参与的创意性短视频互动平台。</div>
+                    </div>
+                    <div class="contentThree wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">
+                        <div>最全面、最新颖、最有趣的短视频,</div>
+                        <div>发布原创视频，记录新鲜生活,</div>
+                    </div>
+                    <div class="xiayibu wow bounceInUp" data-wow-duration="1s" data-wow-delay="2s"><img src="./img/xiayibu.png" alt=""></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="jishaoBox">
+                    <div class="titleBox">
+                        <div class="titleLeft">1</div>
+                        <div class="titleRight">
+                            <div>支持原创</div>
+                            <div>在这里可以自信做自己</div>
+                        </div>
+                    </div>
+                    <div class="jieshaoImg"><img src="./img/yuanchuang-1.png" alt=""></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="jishaoBox">
+                    <div class="titleBox">
+                        <div class="titleLeft">2</div>
+                        <div class="titleRight">
+                            <div>个性主页</div>
+                            <div>管理方便 个性自如</div>
+                        </div>
+                    </div>
+                    <div class="jieshaoImg"><img src="./img/gexing.png" alt=""></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="jishaoBox">
+                    <div class="titleBox">
+                        <div class="titleLeft">3</div>
+                        <div class="titleRight">
+                            <div>新鲜视频</div>
+                            <div>新鲜的、好看的、好玩的短视频</div>
+                        </div>
+                    </div>
+                    <div class="jieshaoImg"><img src="./img/xinxian.png" alt=""></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="jishaoBox">
+                    <div class="titleBox">
+                        <div class="titleLeft">4</div>
+                        <div class="titleRight">
+                            <div>产品特征</div>
+                        </div>
+                    </div>
+                    <div class="cptzTxt">
+                        <div class="cptzTxt_txt_box">
+                            <div class="cptzTxt_txt">
+                                <div>ai大数据技术</div>
+                                <div>基于用户特性匹配</div>
+                                <div>个性化视频内容</div>
+                            </div>
+                            <div class="cptzTxt_txt">
+                                <div>创新奖励机制</div>
+                                <div>看视频提升幸运值</div>
+                                <div>挖掘幸运宝藏</div>
+                            </div>
+                        </div>
+                        <div class="cptzTxt_img"><img src="./img/chanpin.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 滚动按钮 -->
+        <div class="swiper-pagination"></div>
+    </div>
+    
+    
+    
+</body>
+<script>
+    $(function() {
+        $('#header').load('header.html');
+    })
+</script>
+<script type="text/javascript" src="js/wow.min.js"></script>  
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">  
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script> 
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical'
+    });
+</script>
+</html>
